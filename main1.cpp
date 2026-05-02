@@ -1,6 +1,7 @@
 #include <iostream>
-using namespace std;
 
-int main() {
-  cout << "hello world + Kirill Petrov" << endl;
+extern "C" {
+  int sum(int a, int b) {
+    return a + b;
+  }
 }
