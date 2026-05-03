@@ -30,3 +30,12 @@ end
 real    0m3.281s
 user    0m3.265s
 sys     0m0.014s
+
+OpenMP
+
+[kirill@archlinux linux_spbstu_10_lab]$ time python3 main5.py 
+end
+
+real    0m3.897s
+user    0m19.457s
+sys     0m6.561s
