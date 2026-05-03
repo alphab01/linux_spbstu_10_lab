@@ -8,11 +8,11 @@ l = ctypes.CDLL(lib)
 l.sorting.argtypes = [ctypes.POINTER(ctypes.c_int), ctypes.c_int]
 l.sorting.restype = ctypes.POINTER(ctypes.c_int)
 
-test = ctypes.c_int*500000
+test = ctypes.c_int*20000
 
 q = []
-for i in range(0, 500000):
-  q.append(random.randint(0, 500000))
+for i in range(0, 20000):
+  q.append(random.randint(0, 20000))
 
 a = test(*q)
 
