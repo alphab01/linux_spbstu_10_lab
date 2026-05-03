@@ -10,9 +10,12 @@ extern "C" {
         }
       }
     }
+    /*
     for (int i = 0; i < s; ++i) {
       std::cout << c[i] << (i == s - 1 ? '\n' : ' ');
     }
+    */
+    std::cout << "end";
     return c;
   }
 }

@@ -5,14 +5,14 @@ import random
 lib = os.path.abspath("lib1.so")
 l = ctypes.CDLL(lib)
 
-l.sorting.argtypes = [ctypes.c_int*9999, ctypes.c_int]
-l.sorting.restype = ctypes.c_int*9999
+l.sorting.argtypes = [ctypes.POINTER(ctypes.c_int), ctypes.c_int]
+l.sorting.restype = ctypes.POINTER(ctypes.c_int)
 
-test = ctypes.c_int*9999
+test = ctypes.c_int*500000
 
 q = []
-for i in range(0, 9999):
-  q.append(random.randint(0, 9999))
+for i in range(0, 500000):
+  q.append(random.randint(0, 500000))
 
 a = test(*q)
 
