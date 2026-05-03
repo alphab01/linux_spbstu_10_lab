@@ -1,0 +1,32 @@
+без оптимизации
+
+[kirill@archlinux linux_spbstu_10_lab]$ time python3 main1.py
+end
+real    1m40.349s
+user    1m40.152s
+sys     0m0.028s
+
+оптимизация -O3 -march=native
+
+[kirill@archlinux linux_spbstu_10_lab]$ time python3 main2.py 
+end
+real    1m28.648s
+user    1m28.426s
+sys     0m0.009s
+
+векторизация
+
+[kirill@archlinux linux_spbstu_10_lab]$ time python3 main3.py
+end
+
+real    0m3.342s
+user    0m3.325s
+sys     0m0.010s
+
+Выравнивание
+
+[kirill@archlinux linux_spbstu_10_lab]$ time python3 main4.py 
+end
+real    0m3.281s
+user    0m3.265s
+sys     0m0.014s

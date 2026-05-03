@@ -2,7 +2,7 @@ import ctypes
 import os
 import random
 
-lib = os.path.abspath("lib2.so")
+lib = os.path.abspath("lib4.so")
 l = ctypes.CDLL(lib)
 
 l.sorting.argtypes = [ctypes.POINTER(ctypes.c_int), ctypes.c_int]
