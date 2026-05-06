@@ -1,5 +1,4 @@
 #include <immintrin.h>
-#include <algorithm>
 #include <iostream>
 
 extern "C" {
